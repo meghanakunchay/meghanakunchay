@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>UIT Assignment-2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/f65cc028f8.js" crossorigin="anonymous"></script>
+    <link href="index.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="navbar">
+                    <ul class= "list">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#form">Form</a></li>
+                        <li><a href="#slideshow">Slideshow</a></li>                      
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="container">
+            <div class="row full-screen">
+                <div class="home-content">
+                    <div class="block">                        
+                        <h1>Health Survey </h1>
+                        <h6>Done By</h6>
+                        <h3>Kunchay Sree Meghana(82) </h3>
+			<h3>&</h3>
+			<h3>Gokul Chowdary(44)</h3>
+                        <div class="cv-button">
+                            <a href="#form">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <section class="form-section" id="form">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h1>Form</h1>
+                    <p class="small">General Health Survey Form</p>
+                </div>
+            </div>
+            <br />   
+            <div class="container my-custom-container" id="marginadjust">
+                
+                <div class="jumbotron">
+                    <form>
+                      <div class="form-group" style="text-align: center;">
+                        <h1>Survey Form</h1>			
+                      </div>
+                      <br/>
+                      <div class="form-group adjusment">
+                    <fieldset>
+ 
+    <legend>Personal Details</legend>
+  
+    <div class="form-group adjusment">
+      <label id="name-label" for="name">Name:</label>
+      <input type="text" class="form-control" required id="name" name="user_name" placeholder="Enter name here">   
+    </div>
+
+    <div class="form-group adjusment">
+      <label for="address-label">Address:</label>
+      <input type="Address" class="form-control" id="address" name="Address" placeholder="Enter address here">   
+    </div>
+
+    <div class="form-group adjusment">
+      <label id="email-label" for="Email">Email:</label>
+      <input type="email" class="form-control" required id="email" name="user_email" placeholder="Enter email here">  
+    </div>
+
+    <div class="form-group adjusment">
+      <label id="number-label" for="phone">Phone Number:</label>
+      <input type="number" class="form-control" id="number" name="user_name" placeholder="Enter 10 digit number" min="1111111111" max="9999999999"> 
+       </div>
+
+    <div class="form-group adjusment">
+      <label id="iq-label" for="iq">Height:</label>
+      <input type="number" class="form-control" id="iq" name="iq" placeholder="Enter your height">
+    </div>
+    <div class="form-group adjusment">
+      <label id="iq-label" for="iq">Weight:</label>
+      <input type="number" class="form-control" id="iq" name="iq" placeholder="Enter your weight">   </div>
+
+    <div class="form-group adjusment">
+      <label for="Gender">Gender</label>
+      <p>
+        <input type="radio" name="gender" value="male" > Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other
+      </p>
+    </div>
+      <div class="form-group adjusment">
+    <label for="date-label">Date of Birth:</label>
+    <input type="date" class="form-control" name="bday">
+</div>
+  
+  </fieldset>
+  
+  <fieldset>
+      <div class="form-group adjusment">
+    <label for="Gender">Check All That Apply</label>
+    <p>
+      <input type="checkbox" name="age" value="Car"> I exercise daily<br>
+      <input type="checkbox" name="car" value="car"> I drink Alcohol <br>
+      <input type="checkbox" name="work" value="work" > I smoke<br>
+      <input type="checkbox" name="rich" value="rich" > I sleep for less than 8 hours <br>
+      <input type="checkbox" name="loc" value="loc" > I drink less than 3L of water a day <br>
+      <input type="checkbox" name="loc" value="loc" > I eat junk food frequently<br>
+      
+    </p></div>
+  </fieldset>
+  
+ 
+  
+  <fieldset>
+    <div class="form-group adjusment">
+      <label for="politics">Nation:</label>
+      <select id="dropdown">
+  <option value="left">Indian</option>
+  <option value="right">NRI</option>
+  <option value="conservative">Others</option>
+  
+  </select>
+    </div>
+  </fieldset>
+
+
+  <br>
+  <fieldset>
+    <legend>Medical History</legend>
+    <div  class="form-group adjusment">
+      <label for="msg"></label>
+      <p>Enter your medical history if you have any</p>
+      <textarea id="msg" class="form-control" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
+    <div class="form-group adjusment">
+      <label for="msg">Please upload contact details for 2 references</label><br>
+      <textarea id="msg2" class="form-control" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
+    <p>Upload Medical Certifiates here:
+      <button>Attach Files</button></p>
+  </fieldset>
+                    </div>
+                      <button type="submit" class="btn btn-success" style="margin-top: 10px; margin-left: 35px;">Submit</button>
+                    </form>
+                </div>
+            </div>         
+        </div>
+    </section>
+    <div class = "total">
+    <section class="slideshow-section" id="slideshow">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h1>Slideshow</h1>
+                    <p class="small">Images related to Health survey</p>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="container">
+            <div id="slideshow">
+                <div class="slide-wrapper">
+                    <div class="slide"><h1 class="slide-number"></h1></div>
+                    <div class="slide"><h1 class="slide-number"></h1></div>
+                    <div class="slide"><h1 class="slide-number"></h1></div>
+                    <div class="slide"><h1 class="slide-number"></h1></div>
+                </div>
+            </div>
+        </div>
+        
+    </section></div>
+    
+
+    <script type="test/javascript" src="index.js"></script>
+</body>
+</html>
